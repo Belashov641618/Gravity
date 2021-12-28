@@ -1,13 +1,11 @@
 ﻿#include <iostream>
+#include <typeinfo>
 
-//#include "../classes/perfomance/Perfomance.h"
-
-#include "../classes/math/vec.h"
+#include "../classes/math/linalg.h"
 
 using namespace std;
 
 
-
 int main() {
-    cout << "Test is over" << endl;
+    
 }

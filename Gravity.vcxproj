@@ -20,11 +20,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Gravity.cpp" />
-    <ClCompile Include="classes\math\vec.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="classes\math\mat.h" />
+    <ClInclude Include="classes\math\linalg.h" />
+    <ClInclude Include="classes\math\vecN.h" />
     <ClInclude Include="classes\perfomance\Perfomance.h" />
     <ClInclude Include="classes\math\vec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

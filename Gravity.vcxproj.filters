@@ -18,9 +18,6 @@
     <ClCompile Include="source\Gravity.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="classes\math\vec.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="classes\perfomance\Perfomance.h">
@@ -29,5 +26,18 @@
     <ClInclude Include="classes\math\vec.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="classes\math\vecN.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="classes\math\mat.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="classes\math\linalg.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>
