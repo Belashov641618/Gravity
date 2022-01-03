@@ -1,0 +1,35 @@
+﻿  Gravity.cpp
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(199,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(200,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(204,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(208,36): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(226,1): warning C4267: инициализация: преобразование из "size_t" в "uint32_t"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(231,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(233,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(236,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(244,23): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(244,39): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(245,44): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(258,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(261,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(275,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(279,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(282,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(290,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(293,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(297,36): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(314,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(315,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(318,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(321,1): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(325,36): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\classes\linalg\vec.h(83,1): warning C4267: инициализация: преобразование из "size_t" в "uint32_t"; возможна потеря данных
+C:\Users\uclap\Documents\Coding\Gravity\classes\linalg\vec.h(80): message : во время компиляции функции-члена класс шаблон "vec<double,3>::vec(std::initializer_list<double>)"
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(42): message : выполняется компиляция ссылки на экземпляр шаблон функции "vec<double,3>::vec(std::initializer_list<double>)"
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(25): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "vec<double,3>"
+  Создание кода
+  6 of 450 functions ( 1.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    22 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Gravity.vcxproj -> C:\Users\uclap\Documents\Coding\Gravity\x64\Release\Gravity.exe

@@ -34,6 +34,7 @@ public:
 
 	/* Операторы сравнения */
 	bool operator==(const vec<type, size>& other) const restrict(amp, cpu);
+	bool operator!=(const vec<type, size>& other) const restrict(amp, cpu);
 	bool operator> (const vec<type, size>& other) const restrict(amp, cpu);
 	bool operator>=(const vec<type, size>& other) const restrict(amp, cpu);
 	bool operator< (const vec<type, size>& other) const restrict(amp, cpu);
@@ -132,6 +133,12 @@ template<typename type, uint32_t size> bool vec<type, size>::operator==(const ve
 		if (data[i] != other.data[i])
 			return false;
 	return true;
+}
+template<typename type, uint32_t size> bool vec<type, size>::operator!=(const vec<type, size>& other) const restrict(amp, cpu) {
+	for (uint32_t i = 0; i < size; i++)
+		if (data[i] != other.data[i])
+			return true;
+	return false;
 }
 template<typename type, uint32_t size> bool vec<type, size>::operator> (const vec<type, size>& other) const restrict(amp, cpu) {
 	return (this->len() > other.len());

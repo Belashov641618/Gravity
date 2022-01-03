@@ -46,6 +46,7 @@ public:
 
 	/* Операторы сравнения */
 	bool operator==(const mat<type, size_x, size_y>& other) const restrict(amp, cpu);
+	bool operator!=(const mat<type, size_x, size_y>& other) const restrict(amp, cpu);
 	
 	/* Операторы математических операций */
 	mat<type, size_x, size_y> operator+(const mat<type, size_x, size_y>& other)	const restrict(amp, cpu);
@@ -161,6 +162,13 @@ template<typename type, uint32_t size_x, uint32_t size_y> bool mat<type, size_x,
 			if (data[x * size_y + y] != other.data[x * size_x + y])
 				return false;
 	return true;
+}
+template<typename type, uint32_t size_x, uint32_t size_y> bool mat<type, size_x, size_y>::operator!=(const mat<type, size_x, size_y>& other) const restrict(amp, cpu) {
+	for (uint32_t x = 0; x < size_x; x++)
+		for (uint32_t y = 0; y < size_y; y++)
+			if (data[x * size_y + y] != other.data[x * size_x + y])
+				return true;
+	return false;
 }
 
 /* Операторы математических операций */

@@ -1,3 +1,8 @@
 ﻿  Gravity.cpp
-C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(187,36): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(196,36): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(232,23): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(232,39): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(233,44): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(285,36): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\uclap\Documents\Coding\Gravity\source\Gravity.cpp(313,36): warning C4018: <: несоответствие типов со знаком и без знака
   Gravity.vcxproj -> C:\Users\uclap\Documents\Coding\Gravity\Debug\Gravity.exe
