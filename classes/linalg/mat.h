@@ -57,10 +57,6 @@ public:
 		return mat * value;
 	}
 	
-	/* Глобальные математические функции */
-	
-	/* Математические функции */
-	
 	/* Инкреминация */
 	type& operator()(const uint32_t x, const uint32_t y) restrict(amp, cpu);
 	type& operator()(const uint32_t n) restrict(amp, cpu);
@@ -197,61 +193,6 @@ template<typename type, uint32_t size_x, uint32_t size_y> mat<type, size_x, size
 			result.data[x * size_y + y] = data[x * size_y + y] / value;
 	return result;
 }
-
-/* Глобальные математические функции */
-//template<typename type, uint32_t size_x, uint32_t size_y> type mat<type, size_x, size_y>::det(const mat<type, size_x, size_y>& other) restrict(amp, cpu) {
-//	type determinant = type(0);
-//	type multiplier  = type(+1);
-//
-//	for (uint32_t i = 0; i < size_x; i++) {
-//		mat<type, size_x - 1, size_y - 1> temp_mat;
-//
-//		for (uint32_t x = 0; x < i; x++)
-//			for (uint32_t y = 1; y < size_y; y++)
-//				temp_mat(x, y - 1) = other.get(x, y);
-//
-//		for (uint32_t x = i + 1; x < size_x; x++)
-//			for (uint32_t y = 1; y < size_y; y++)
-//				temp_mat(x - 1, y - 1) = other.get(x, y);
-//
-//		determinant += multiplier * temp_mat.det();
-//
-//		multiplier *= type(-1);
-//	}
-//
-//	return determinant;
-//}
-
-/* Математические функции */
-//template<typename type, uint32_t size_x, uint32_t size_y> type mat<type, size_x, size_y>::det() const restrict(amp, cpu) {
-//	type determinant = type(0);
-//
-//	if (size_y > 2) {
-//		type multiplier = type(+1);
-//
-//		for (uint32_t i = 0; i < size_x; i++) {
-//			mat<type, size_x - 1, size_y - 1> temp_mat;
-//
-//			for (uint32_t x = 0; x < i; x++)
-//				for (uint32_t y = 1; y < size_y; y++)
-//					temp_mat(x, y - 1) = get(x, y);
-//
-//			for (uint32_t x = i + 1; x < size_x; x++)
-//				for (uint32_t y = 1; y < size_y; y++)
-//					temp_mat(x - 1, y - 1) = get(x, y);
-//
-//			determinant += multiplier * temp_mat.det();
-//
-//			multiplier *= type(-1);
-//		}
-//	}
-//	else {
-//		determinant = get(0, 0) * get(1, 0) - get(0, 1) * get(1, 1);
-//	}
-//	
-//
-//	return determinant;
-//}
 
 /* Инкреминация */
 template<typename type, uint32_t size_x, uint32_t size_y> type& mat<type, size_x, size_y>::operator()(const uint32_t x, const uint32_t y) restrict(amp, cpu) {

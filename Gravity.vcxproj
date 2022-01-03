@@ -22,11 +22,11 @@
     <ClCompile Include="source\Gravity.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="classes\math\mat.h" />
-    <ClInclude Include="classes\math\linalg.h" />
-    <ClInclude Include="classes\math\vecN.h" />
+    <ClInclude Include="classes\linalg\mat.h" />
+    <ClInclude Include="classes\linalg\linalg.h" />
+    <ClInclude Include="classes\linalg\vecN.h" />
     <ClInclude Include="classes\perfomance\Perfomance.h" />
-    <ClInclude Include="classes\math\vec.h" />
+    <ClInclude Include="classes\linalg\vec.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
