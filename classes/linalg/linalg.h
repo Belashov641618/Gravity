@@ -12,8 +12,12 @@
 9. ”гол между векторами
 */
 
+#define PI 3.1415926535897932384626433832795
+
 #include "vec.h"
 #include "mat.h"
+
+#include <random>
 
 namespace linalg {
 	template<typename type>					type det(const mat<type, 2, 2>& matrix)			restrict(amp, cpu) {
@@ -168,5 +172,29 @@ namespace linalg {
 	}
 	template<typename type, uint32_t size> type angle(const vec<type, size>& vector1, const vec<type, size>& vector2) restrict(amp) {
 		return concurrency::precise_math::acos(linalg::dot(vector1.dir(), vector2.dir()));
+	}
+
+	template<typename type, uint32_t size> type cosbtw(const vec<type, size>& vector1, const vec<type, size>& vector2) restrict(amp, cpu) {
+		return linalg::dot(vector1.dir(), vector2.dir());
+	}
+
+
+	template<typename type> vec<type, 1> random_vec1() restrict(cpu);
+	template<typename type> vec<type, 2> random_vec2() restrict(cpu);
+	template<typename type> vec<type, 3> random_vec3(const type len_min = 0., const type len_max = 1., const type azi_min = 0., const type azi_max = 2. * PI, const type ver_min = 0., const type ver_max = PI) restrict(cpu) {
+		type azi = (type(rand()) / type(RAND_MAX)) * (azi_max - azi_min) + azi_min;
+		type ver = (type(rand()) / type(RAND_MAX)) * (ver_max - ver_min) + ver_min;
+		type len = (type(rand()) / type(RAND_MAX)) * (len_max - len_min) + len_min;
+
+		return vec<type, 3>({
+			len * cos(ver) * cos(azi),
+			len * cos(ver) * sin(azi),
+			len * sin(ver)
+			});
+	}
+	template<typename type> vec<type, 4> random_vec4() restrict(cpu);
+
+	template<typename type> type random(const type min, const type max) restrict(cpu) {
+		return (type(rand()) / type(RAND_MAX)) * (max - min) + min;
 	}
 };
